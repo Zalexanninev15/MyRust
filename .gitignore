@@ -1,0 +1,5 @@
+/mass/target
+/rust-cargo/target
+/sqr_uraw/target
+*.exe
+tempCodeRunnerFile.rs
