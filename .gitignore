@@ -3,3 +3,5 @@
 /sqr_uraw/target
 *.exe
 tempCodeRunnerFile.rs
+cortegi/target/
+fnc/target/
