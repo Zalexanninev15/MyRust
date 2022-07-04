@@ -5,3 +5,8 @@
 tempCodeRunnerFile.rs
 cortegi/target/
 fnc/target/
+*.json
+*.TAG
+*.rmeta
+*.bin
+*.lock
