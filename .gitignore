@@ -1,9 +1,6 @@
-/mass/target
-/rust-cargo/target
-/sqr_uraw/target
+*/target/*
 *.exe
 tempCodeRunnerFile.rs
-cortegi/target/
 fnc/target/
 *.json
 *.TAG
