@@ -8,3 +8,4 @@ fnc/target/
 *.rmeta
 *.bin
 *.lock
+main

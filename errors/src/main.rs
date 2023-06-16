@@ -63,11 +63,11 @@ fn main() {
     }
 
     // 6. Оператор ? (в функции read_file_text_Q)
-    match read_file_text_Q(path) {
+    match read_file_text_q(path) {
         Ok(data) => println!("File text: {}", data), // data из функции read_file_text
         Err(e) => panic!("Error occured: {:?}", e),
     }
-    match read_file_text_Q(path) {
+    match read_file_text_q(path) {
         Ok(data) => println!("File text: {}", data), // data из функции read_file_text
         Err(e) => match e.kind() {
             ErrorKind::NotFound => match File::create(path) {
@@ -81,7 +81,7 @@ fn main() {
 }
 
 // Возвращение текста из файла или ошибки с ?
-fn read_file_text_Q(path: &str) -> Result<String, Error> {
+fn read_file_text_q(path: &str) -> Result<String, Error> {
     let mut f = File::open(path)?;
     /* "?"" берёт из Ok(...) => ... файл (file)
     Возвращает ошибку туда, откуда вызывается функция (без panic!)

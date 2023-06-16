@@ -10,7 +10,7 @@ fn main() {
     println!("Hello world, {}", lang); // Ввывод текста, потом с новой строки
 
     // Int64
-    let age: i64 = 23; 
+    let age: i64 = 23;
     println!("My age is {}", age);
 
     // Float
@@ -29,11 +29,7 @@ fn main() {
 
     // Логика
     let is_true: bool = true;
-    let num = if is_true {
-        1
-    } else {
-        0
-    };
+    let num = if is_true { 1 } else { 0 };
     println!("{}", num);
 
     // Работа с функцией
@@ -49,7 +45,9 @@ fn main() {
     loop {
         println!("{}", num);
         num += 1;
-        if num == 100 { break; }
+        if num == 100 {
+            break;
+        }
     }
 
     // Цикл
@@ -60,8 +58,10 @@ fn main() {
     }
 
     // For
-    for i in 0..101 { // >= 0 and < 101
-        if i % 2 == 0 { // Деление нацело, остаток == 0
+    for i in 0..101 {
+        // >= 0 and < 101
+        if i % 2 == 0 {
+            // Деление нацело, остаток == 0
             println!("{}", i)
         }
     }
@@ -70,14 +70,16 @@ fn main() {
     let num = 24;
     match num {
         10 => println!("Num is 10!"),
-        23 => { 
+        23 => {
             println!("Num is 45!");
-            println!("OK!"); 
-        },
-        10..=50 => { // число между 10 и 50
+            println!("OK!");
+        }
+        10..=50 => {
+            // число между 10 и 50
             println!("Число между 10 и 50");
-        },
-        _ => { // _ - если ничего из вышеперечисленного не верно
+        }
+        _ => {
+            // _ - если ничего из вышеперечисленного не верно
             println!("Таких вариантов нет!");
         }
     };
@@ -88,17 +90,19 @@ fn main() {
         2 => 1,
         3 => 10,
         3..=10 => 7,
-        _ => 0
+        _ => 0,
     };
     println!("{}", num);
 
     // Ввод
     let mut name = String::new();
     println!("Введите свой имя: ");
-    match io::stdin().read_line(&mut name) { // Проверка на ошибки
-        Ok(_) => { // Можно так Ok(_) => { }, 
+    match io::stdin().read_line(&mut name) {
+        // Проверка на ошибки
+        Ok(_) => {
+            // Можно так Ok(_) => { },
             println!("Привет, {}", name)
-        },
+        }
         Err(e) => {
             println!("Ошибка!");
         }
@@ -106,13 +110,11 @@ fn main() {
     io::stdin().read_line(&mut name).unwrap();
 }
 
-fn funct()
--> &'static str {
+fn funct() -> &'static str {
     // println!("LoL");
     "LoL"
 }
 
-fn funct_sum(x: i64, y: i64) 
--> i64 {
+fn funct_sum(x: i64, y: i64) -> i64 {
     x + y
 }
