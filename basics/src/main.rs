@@ -10,16 +10,16 @@ fn main() {
     println!("Hello world, {}", lang); // Ввывод текста, потом с новой строки
 
     // Int64
-    let mut age: i64 = 23; 
+    let age: i64 = 23; 
     println!("My age is {}", age);
 
     // Float
-    let mut float: f64 = 134.65;
+    let float: f64 = 134.65;
     println!("Number is {}", float);
 
     // Char
-    let mut symbol: char = 'c';
-    let mut smile: char = '🤔';
+    let symbol: char = 'c';
+    let smile: char = '🤔';
     println!("Char {} is char {}", symbol, smile);
 
     // Bool
@@ -41,7 +41,7 @@ fn main() {
     // println!("{}", lol);
 
     // Работа с функцией i64
-    let mut result = funct_sum(4, 9);
+    let result = funct_sum(4, 9);
     println!("{}", result);
 
     // Бесконечный цикл
@@ -103,7 +103,7 @@ fn main() {
             println!("Ошибка!");
         }
     }
-    let input2 = io::stdin().read_line(&mut name).unwrap();
+    io::stdin().read_line(&mut name).unwrap();
 }
 
 fn funct()
