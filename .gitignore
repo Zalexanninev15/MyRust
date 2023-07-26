@@ -1,11 +1,12 @@
-*/target/*
-*/.idea/*
+learn/*/target/*
+projects/*/target/*
+projects/*/.idea/*
 *.exe
 tempCodeRunnerFile.rs
-fnc/target/
 *.json
 *.TAG
 *.rmeta
 *.bin
-*.lock
+Cargo.lock
 main
+
