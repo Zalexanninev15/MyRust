@@ -9,4 +9,3 @@ tempCodeRunnerFile.rs
 *.bin
 Cargo.lock
 main
-*.iml
