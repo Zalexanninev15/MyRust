@@ -1,6 +1,5 @@
-learn/*/target/*
-projects/*/target/*
-projects/*/.idea/*
+target
+.idea
 *.exe
 tempCodeRunnerFile.rs
 *.json
