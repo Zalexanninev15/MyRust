@@ -6,7 +6,7 @@ fn main() {
     println!("{}", s3);
     s2.push('!'); // Добавление char к string
     println!("{}", s2);
-    let mut res = s3 + &s2; // Соединение строк
+    let res = s3 + &s2; // Соединение строк
                             // или format!("{} {}", s3, s2);
     println!("{}", res);
 
